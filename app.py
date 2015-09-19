@@ -15,6 +15,9 @@ world_topo = r'world-countries.topo.json'
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 @app.route("/static/<path:path>")
 def send_static_files(path):
