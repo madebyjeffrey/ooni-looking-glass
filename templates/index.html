@@ -1,31 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-      <div class="row">
-        <div class="col-xs-12" id="map"></div>
-      </div>
-    </nav>
-
-    <div id="map">
+    <div class="row">
+      <div class="col-xs-12" id="map"></div>
         <div class="follower"></div>
+      </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>OONI</h2>
-          <p><a href="https://ooni.torproject.org/">Open Observatory of Network Interference</a> scans a few major protocols for interference through the <a href="https://torproject.org/">tor</a> network and compares it to a known good value.</p>
-        </div>
-        <div class="col-md-4">
-          <h2>Open Data</h2>
-          <p>OONI provides data of its observations of network tampering taking place around the world, which can be useful to journalists, technologists, and legal scholars. </p>
-       </div>
-        <div class="col-md-4">
-          <h2>Contribute</h2>
-          <p>The design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference.</p>
-        </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>OONI</h2>
+        <p><a href="https://ooni.torproject.org/">Open Observatory of Network Interference</a> scans a few major protocols for interference through the <a href="https://torproject.org/">tor</a> network and compares it to a known good value.</p>
       </div>
+      <div class="col-md-4">
+        <h2>Open Data</h2>
+        <p>OONI provides data of its observations of network tampering taking place around the world, which can be useful to journalists, technologists, and legal scholars. </p>
+     </div>
+      <div class="col-md-4">
+        <h2>Contribute</h2>
+        <p>The design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference.</p>
+      </div>
+    </div>
 {% endblock %}
 
 {% block scripts %}
