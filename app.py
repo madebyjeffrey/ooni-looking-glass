@@ -8,6 +8,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/static/<path:path>")
+def send_static_files(path):
+    return send_from_directory('static', path)
+
 
 def get_local_ip():
     """
