@@ -1,0 +1,1507 @@
+---
+backend_version: 1.1.2
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: header
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+test_name: bridge_reachability
+test_version: 0.1.1
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 3e0908f131ac417c48ddd835d78fb6887f4cd126
+distributor: tbb
+error: null
+input: 3e0908f131ac417c48ddd835d78fb6887f4cd126
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: b88eaadb5c64dae03808c5376c4c3f4f5cb48be8
+distributor: tbb
+error: null
+input: b88eaadb5c64dae03808c5376c4c3f4f5cb48be8
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 4ecb053e4ae75836a488dbdf8e1368f73cb418fe
+distributor: tbb
+error: null
+input: 4ecb053e4ae75836a488dbdf8e1368f73cb418fe
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 626ec5e8b39dbc1d1b853529cdc80d21bf4c20e1
+distributor: tbb
+error: null
+input: 626ec5e8b39dbc1d1b853529cdc80d21bf4c20e1
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 72cfb32c9f5dfc66e971150657617fe159256d96
+distributor: tbb
+error: null
+input: 72cfb32c9f5dfc66e971150657617fe159256d96
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 6ce1370edfe977e7a3124b7c1e543b533a1c6e9c
+distributor: tbb
+error: null
+input: 6ce1370edfe977e7a3124b7c1e543b533a1c6e9c
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 6ce1370edfe977e7a3124b7c1e543b533a1c6e9c
+distributor: tbb
+error: null
+input: 6ce1370edfe977e7a3124b7c1e543b533a1c6e9c
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: faeabf422ecb91c1d96492b06de2539edd6bfb0e
+distributor: tbb
+error: null
+input: faeabf422ecb91c1d96492b06de2539edd6bfb0e
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 231e2de81dc4314f2035d2c0d0d043a425ff8999
+distributor: tbb
+error: null
+input: 231e2de81dc4314f2035d2c0d0d043a425ff8999
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a72d5db45d9de4b244d3f6c4ad22a66f40bf5b87
+distributor: tbb
+error: null
+input: a72d5db45d9de4b244d3f6c4ad22a66f40bf5b87
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 73d8ff840444f84ec50dd755fbad44cf1f0de28b
+distributor: tbb
+error: null
+input: 73d8ff840444f84ec50dd755fbad44cf1f0de28b
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 516a850ea57678e48fffa157449aea0542b5cd73
+distributor: tbb
+error: null
+input: 516a850ea57678e48fffa157449aea0542b5cd73
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 4bd07e90c9ddf1c54c6e9a08871c0d5e896b4ac6
+distributor: https
+error: null
+input: 4bd07e90c9ddf1c54c6e9a08871c0d5e896b4ac6
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 185e98a68f59e914c5f85a3b18959641d55a2373
+distributor: https
+error: null
+input: 185e98a68f59e914c5f85a3b18959641d55a2373
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs2
+transport_name: obfs2
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a7f138cf11822ca9426dfd50e9c79378ab5400be
+distributor: https
+error: null
+input: a7f138cf11822ca9426dfd50e9c79378ab5400be
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: d3005ddc754f96708c5c9b72ff9ff7e0acd61a5e
+distributor: https
+error: null
+input: d3005ddc754f96708c5c9b72ff9ff7e0acd61a5e
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs2
+transport_name: obfs2
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 2b4770c0cbd1c3a10b060721a3159678d9a46bc6
+distributor: https
+error: null
+input: 2b4770c0cbd1c3a10b060721a3159678d9a46bc6
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: vanilla
+transport_name: vanilla
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 13fdf30ec3ecb5b08da7fef41d3be9683ea5aeea
+distributor: https
+error: null
+input: 13fdf30ec3ecb5b08da7fef41d3be9683ea5aeea
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 686e790e6ec534bdad722dd40d25a73e72c9b1fb
+distributor: https
+error: null
+input: 686e790e6ec534bdad722dd40d25a73e72c9b1fb
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: f17cbc91439c53e2a2b6a3ddf05c88da7117cad7
+distributor: tbb
+error: null
+input: f17cbc91439c53e2a2b6a3ddf05c88da7117cad7
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 83e4c1ee5d3914b218960e75c4b0c604f21c894a
+distributor: email
+error: null
+input: 83e4c1ee5d3914b218960e75c4b0c604f21c894a
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: ss
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: f2a827673111fec4957fbf1d2d3b32e5073bb61b
+distributor: tbb
+error: null
+input: f2a827673111fec4957fbf1d2d3b32e5073bb61b
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: scramblesuit
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 8d00f43c68e2dc48b5e045cb14347139341afade
+distributor: email
+error: null
+input: 8d00f43c68e2dc48b5e045cb14347139341afade
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: ss
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a93d775ebbdf9b1b6f2d018733b6e525e43d0797
+distributor: tbb
+error: null
+input: a93d775ebbdf9b1b6f2d018733b6e525e43d0797
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: scramblesuit
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 3e0908f131ac417c48ddd835d78fb6887f4cd126
+distributor: tbb
+error: null
+input: 3e0908f131ac417c48ddd835d78fb6887f4cd126
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: scramblesuit
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a2f284c85ba3dd03311480a70c5e1f5dab499001
+distributor: email
+error: null
+input: a2f284c85ba3dd03311480a70c5e1f5dab499001
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs2
+transport_name: obfs2
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: ea3509245da3d2d1c2b8379a20d5fc486ca321a3
+distributor: email
+error: null
+input: ea3509245da3d2d1c2b8379a20d5fc486ca321a3
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 55f35af6f212121403d3d01bfa60f5872ee4a70a
+distributor: email
+error: null
+input: 55f35af6f212121403d3d01bfa60f5872ee4a70a
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: vanilla
+transport_name: vanilla
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 9b019c5b702530934e88c5c1f286eea591251a32
+distributor: email
+error: null
+input: 9b019c5b702530934e88c5c1f286eea591251a32
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: vanilla
+transport_name: vanilla
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 7ce18672000f69b42d1e51a016a2d284058afb36
+distributor: unallocated
+error: null
+input: 7ce18672000f69b42d1e51a016a2d284058afb36
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs2
+transport_name: obfs2
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: ea7d2cbc0a97da310a1652f6e4addbf0cc12c617
+distributor: unallocated
+error: null
+input: ea7d2cbc0a97da310a1652f6e4addbf0cc12c617
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a4bf03c0be769735207c783a5b6d3b9014acd1c8
+distributor: unallocated
+error: null
+input: a4bf03c0be769735207c783a5b6d3b9014acd1c8
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: acc102b4e81c195bf409ff6ca10fc8a094c07667
+distributor: unallocated
+error: null
+input: acc102b4e81c195bf409ff6ca10fc8a094c07667
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs2
+transport_name: obfs2
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 9238de5b8d6050aa72df434ee16dbacda00547c4
+distributor: unallocated
+error: null
+input: 9238de5b8d6050aa72df434ee16dbacda00547c4
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 95f4f7c890a7cd06c21d85e69123ed4359be22ba
+distributor: unallocated
+error: null
+input: 95f4f7c890a7cd06c21d85e69123ed4359be22ba
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: vanilla
+transport_name: vanilla
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 3fe56c568006b582f9c9b39664b116e713a58d49
+distributor: unallocated
+error: null
+input: 3fe56c568006b582f9c9b39664b116e713a58d49
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 6095b2b54a75fbb4bf770b6d096c1afa8051b481
+distributor: unallocated
+error: null
+input: 6095b2b54a75fbb4bf770b6d096c1afa8051b481
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: true
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: null
+tor_progress: 100
+tor_progress_summary: Done
+tor_progress_tag: done
+tor_version: 0.2.5.6-alpha
+transport: ss
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 78dadc72cb6d80cdc57e177a35714bd8ab7ddb86
+distributor: https
+error: null
+input: 78dadc72cb6d80cdc57e177a35714bd8ab7ddb86
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: ss
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: dff4685219bbd28f2832690bc6d2d406f72e5d9c
+distributor: https
+error: null
+input: dff4685219bbd28f2832690bc6d2d406f72e5d9c
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 5
+tor_progress_summary: Connecting to directory server
+tor_progress_tag: conn_dir
+tor_version: 0.2.5.6-alpha
+transport: vanilla
+transport_name: vanilla
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a5657fc85f42962e27d9964c7f027c48ba236a9a
+distributor: email
+error: null
+input: a5657fc85f42962e27d9964c7f027c48ba236a9a
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: fte
+transport_name: fte
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 4c0d8ac53e14e065a0b90cd10cbbac405f0dbe5e
+distributor: email
+error: null
+input: 4c0d8ac53e14e065a0b90cd10cbbac405f0dbe5e
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs2
+transport_name: obfs2
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 156843f80ddc432b179cbe3cdb9e46d95d3f7ed4
+distributor: email
+error: null
+input: 156843f80ddc432b179cbe3cdb9e46d95d3f7ed4
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 03c703b6f97c4ffef1edde096510a25bfbea6ab8
+distributor: email
+error: null
+input: 03c703b6f97c4ffef1edde096510a25bfbea6ab8
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: obfs3
+transport_name: obfs3
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: a4bf03c0be769735207c783a5b6d3b9014acd1c8
+distributor: unallocated
+error: null
+input: a4bf03c0be769735207c783a5b6d3b9014acd1c8
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: ss
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: 9632900eb160a436968a7051d3908930ed8d48af
+distributor: unallocated
+error: null
+input: 9632900eb160a436968a7051d3908930ed8d48af
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 5
+tor_progress_summary: Connecting to directory server
+tor_progress_tag: conn_dir
+tor_version: 0.2.5.6-alpha
+transport: vanilla
+transport_name: vanilla
+...
+---
+backend_version: 1.1.2
+bridge_address: null
+bridge_hashed_fingerprint: dcdb7afb15187192f4800308db3208055221b86b
+distributor: unallocated
+error: null
+input: dcdb7afb15187192f4800308db3208055221b86b
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+obfsproxy_version: 0.2.12
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: entry
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+start_time: 1424044816.431752
+success: false
+test_name: bridge_reachability
+test_version: 0.1.1
+timeout: 400
+tor_log: Tor exited with error-code 0
+tor_progress: 10
+tor_progress_summary: Finishing handshake with directory server
+tor_progress_tag: handshake_dir
+tor_version: 0.2.5.6-alpha
+transport: ss
+transport_name: scramblesuit
+...
+---
+backend_version: 1.1.2
+input_hashes: [1d4a3801e94158c0cf0f25605fced50a2f2ab9d538fc9f72c06cfbfa976d1f67]
+options: [-f, bridges.txt, -t, '400']
+probe_asn: AS47172
+probe_cc: NL
+probe_city: null
+probe_ip: 127.0.0.1
+record_type: footer
+report_filename: 20150216T000016Z-AS47172-bridge_reachability-v1-probe.yaml
+report_id: 2015-02-15xlyzefciffmprzhzbmxwojqxrlhritdzvgpustjc
+software_name: ooniprobe
+software_version: 1.1.1
+stage_1_process_time: 0.6415669918060303
+start_time: 1424044816.431752
+test_name: bridge_reachability
+test_version: 0.1.1
+...
