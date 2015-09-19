@@ -16,6 +16,7 @@ world_topo = r'world-countries.topo.json'
 def index():
     return render_template("index.html")
 
+
 @app.route("/static/<path:path>")
 def send_static_files(path):
     return send_from_directory('static', path)
@@ -25,12 +26,7 @@ def send_static_files(path):
 # in to the json catchall below if we can find it
 @app.route("/world-countries.topo.json")
 def world_topo_json():
-    return send_from_directory('json', world_topo)
-
-
-@app.route('/json/<path:path>')
-def send_json(path):
-    return send_from_directory('json', path)
+    return send_from_directory('static', 'json/' + world_topo)
 
 
 @app.route("/gen_map")
@@ -39,7 +35,7 @@ def gen_map():
                  'url': world_topo,
                  'feature': 'world-countries'}]
     vis = vincent.Map(geo_data=geo_data, scale=200)
-    vis.to_json("json/map.json")
+    vis.to_json("static/json/map.json")
     return "Map Generated"
 
 
