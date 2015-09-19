@@ -6,6 +6,9 @@ import struct
 
 import vincent
 
+# For debugging
+from pprint import pprint
+
 app = Flask(__name__)
 
 world_topo = r'world-countries.topo.json'
@@ -33,11 +36,38 @@ def world_topo_json():
 
 @app.route("/gen_map")
 def gen_map():
-    geo_data = [{'name': 'countries',
-                 'url': world_topo,
-                 'feature': 'world-countries'}]
-    vis = vincent.Map(geo_data=geo_data, scale=200)
-    vis.to_json("static/json/map.json")
+    vis = vincent.Visualization(width=960, height=500)
+    vis.data['countries'] = vincent.Data(
+        name='countries',
+        url=world_topo,
+        format={'type': 'topojson', 'feature': 'world-countries'}
+    )
+
+    geo_transform = vincent.Transform(
+        type='geopath', value="data", projection='winkel3', scale=200,
+        translate=[480, 250]
+    )
+
+    geo_from = vincent.MarkRef(data='countries', transform=[geo_transform])
+
+    enter_props = vincent.PropertySet(
+        stroke=vincent.ValueRef(value='#000000'),
+        path=vincent.ValueRef(field='path')
+    )
+
+    update_props = vincent.PropertySet(fill=vincent.ValueRef(value='steelblue'))
+    hover_props = vincent.PropertySet(fill=vincent.ValueRef(value='#000000'))
+    mark_props = vincent.MarkProperties(
+        enter=enter_props,
+        update=update_props,
+        hover=hover_props,
+    )
+
+    vis.marks.append(
+        vincent.Mark(type='path', from_=geo_from, properties=mark_props)
+    )
+
+    vis.to_json('static/json/map.json')
     return "Map Generated"
 
 

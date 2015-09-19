@@ -7,18 +7,6 @@
         "type": "topojson"
       },
       "name": "countries",
-      "transform": [
-        {
-          "projection": "winkel3",
-          "scale": 200,
-          "translate": [
-            480.0,
-            250.0
-          ],
-          "type": "geopath",
-          "value": "data"
-        }
-      ],
       "url": "world-countries.topo.json"
     }
   ],
@@ -27,7 +15,19 @@
   "marks": [
     {
       "from": {
-        "data": "countries"
+        "data": "countries",
+        "transform": [
+          {
+            "projection": "winkel3",
+            "scale": 200,
+            "translate": [
+              480,
+              250
+            ],
+            "type": "geopath",
+            "value": "data"
+          }
+        ]
       },
       "properties": {
         "enter": {
@@ -35,6 +35,11 @@
             "field": "path"
           },
           "stroke": {
+            "value": "#000000"
+          }
+        },
+        "hover": {
+          "fill": {
             "value": "#000000"
           }
         },
@@ -47,7 +52,6 @@
       "type": "path"
     }
   ],
-  "padding": "auto",
   "scales": [],
   "width": 960
 }
