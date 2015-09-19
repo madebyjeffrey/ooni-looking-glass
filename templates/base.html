@@ -1,0 +1,52 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}{%if pagetitle %}{{ pagetitle }} | {% endif %}OONI Looking Glass{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+        <link href="/static/css/flags.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <script src="static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="static/js/concatlibs.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+<!-- github -->
+      <a href="https://github.com/TylerJFisher/ooni-looking-glass"><img style="position: fixed; top: 2.25cm; left: 0; border: 0; z-index: 2;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav>
+      <a href="/"><img src="/static/img/ooni-header-mascot.svg" class="logo"></a>
+      <a href="/">OONI Looking Glass</a>
+      <a href="/about">About</a>
+    </nav>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+
+
+
+    </div>
+    <footer>
+      <p>This hack is created at the HackTheNorth 2015 hackathon using
+        open data from the <a href="https://ooni.torproject.org/">OONI project</a>.</p>
+    </footer>    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="static/js/vendor/bootstrap.min.js"></script>
+
+        {% block scripts %}
+        {% endblock %}
+
+    </body>
+</html>

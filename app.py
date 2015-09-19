@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from flask import Flask, render_template, send_from_directory
 import os
-import fcntl
 import socket
 import struct
 
@@ -19,6 +18,9 @@ world_topo = r'world-countries.topo.json'
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 @app.route("/static/<path:path>")
 def send_static_files(path):
@@ -97,12 +99,13 @@ def get_local_ip():
 
 
 def get_interface_ip(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    return socket.inet_ntoa(fcntl.ioctl(
-        s.fileno(),
-        0x8915,  # SIOCGIFADDR
-        struct.pack(b'256s', ifname[:15])
-    )[20:24])
+    #s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    #return socket.inet_ntoa(fcntl.ioctl(
+    #    s.fileno(),
+    #    0x8915,  # SIOCGIFADDR
+    #    struct.pack(b'256s', ifname[:15])
+    #)[20:24])
+    return socket.gethostbyname(socket.gethostname())
 
 
 if __name__ == "__main__":
