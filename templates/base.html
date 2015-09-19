@@ -18,56 +18,35 @@
         <script src="static/js/concatlibs.min.js" charset="utf-8"></script>
     </head>
     <body>
+
+<!-- github -->
+      <a href="https://github.com/TylerJFisher/ooni-looking-glass"><img style="position: fixed; top: 2.25cm; left: 0; border: 0; z-index: 2;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-
-          <a class="navbar-brand" href="/">OONI Looking Glass</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          <li><a href="/about">About</a></li>
-        </ul>
-
-        </div><!--/.navbar-collapse -->
-      </div>
+    <nav>
+      <a href="/"><img src="/static/img/ooni-header-mascot.svg" class="logo"></a>
+      <a href="/">OONI Looking Glass</a>
+      <a href="/about">About</a>
     </nav>
 
     <div class="container">
       {% block content %}
       {% endblock %}
-      <hr>
 
-      <footer>
-        <p></p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+    </div>
+    <footer>
+      <p>This hack is created at the HackTheNorth 2015 hackathon using
+        open data from the <a href="https://ooni.torproject.org/">OONI project</a>.</p>
+    </footer>    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="static/js/vendor/bootstrap.min.js"></script>
 
         {% block scripts %}
         {% endblock %}
-        
 
-        <!-- [> Google Analytics: change UA-XXXXX-X to be your site's ID. <] -->
-        <!-- <script> -->
-            <!-- (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]= -->
-            <!-- function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date; -->
-            <!-- e=o.createElement(i);r=o.getElementsByTagName(i)[0]; -->
-            <!-- e.src='//www.google-analytics.com/analytics.js'; -->
-            <!-- r.parentNode.insertBefore(e,r)}(window,document,'script','ga')); -->
-            <!-- ga('create','UA-XXXXX-X','auto');ga('send','pageview'); -->
-        <!-- </script> -->
     </body>
 </html>
