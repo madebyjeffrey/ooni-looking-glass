@@ -90,7 +90,7 @@ def insert_bridge_reachability_reports(db, reports):
     :return:
     """
     print("Inserting data into MongoDB")
-    db.ooni_test.insert_many(reports)
+    db.ooni_public.insert_many(reports)
 
 
 def main():
