@@ -21,6 +21,12 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <nav>
+      <a href="/"><img src="/static/img/ooni-header-mascot.svg" class="logo"></a>
+      <a href="/">OONI Looking Glass</a>
+      <a href="/about">About</a>
+    </nav>
+    <!--
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -31,17 +37,21 @@
             <span class="icon-bar"></span>
           </button>
 
-
-          <a class="navbar-brand" href="/">OONI Looking Glass</a>
+          <a id="logoimg" class="navbar-brand" href="/">
+            <img src="static/img/ooni-header-mascot.svg" class="logo">
+          </a>
+          <a id="brand" class="navbar-brand" href="/">
+            OONI Looking Glass
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
           <li><a href="/about">About</a></li>
         </ul>
 
-        </div><!--/.navbar-collapse -->
+      </div>--><!--/.navbar-collapse --><!--
       </div>
-    </nav>
+    </nav>-->
 
     <div class="container">
       {% block content %}
@@ -58,7 +68,7 @@
 
         {% block scripts %}
         {% endblock %}
-        
+
 
         <!-- [> Google Analytics: change UA-XXXXX-X to be your site's ID. <] -->
         <!-- <script> -->
