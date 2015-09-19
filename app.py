@@ -34,19 +34,49 @@ def world_topo_json():
 
 @app.route("/gen_map")
 def gen_map():
-    geo_data = [{'name': 'countries',
-                 'url': world_topo,
-                 'feature': 'world-countries'}]
+    vis = vincent.Visualization(width=960, height=500)
+    vis.data['countries'] = vincent.Data(
+        name='countries',
+        url=world_topo,
+        format={'type': 'topojson', 'feature': 'world-countries'}
+        )
 
-    vis = vincent.Map(geo_data=geo_data, scale=200)
+    geo_transform = vincent.Transform(
+        type='geopath', value="data", projection='winkel3', scale=200,
+        translate=[480, 250]
+    )
 
-    # update_props =
-    # click_props =
-    hover_props = vincent.PropertySet(fill=vincent.ValueRef(value='red'))
-    vis.marks[0].properties.hover = hover_props
+    geo_from = vincent.MarkRef(data='countries', transform=[geo_transform])
 
-    vis.to_json("static/json/map.json")
+    enter_props = vincent.PropertySet(
+        stroke=vincent.ValueRef(value='#000000'),
+        path=vincent.ValueRef(field='path')
+        )
+
+    update_props = vincent.PropertySet(fill=vincent.ValueRef(value='steelblue'))
+
+    mark_props = vincent.MarkProperties(enter=enter_props, update=update_props)
+
+    vis.marks.append(
+        vincent.Mark(type='path', from_=geo_from, properties=mark_props)
+    )
+
+    vis.to_json('static/json/map.json')
     return "Map Generated"
+
+#     geo_data = [{'name': 'countries',
+#                  'url': world_topo,
+#                  'feature': 'world-countries'}]
+# 
+#     vis = vincent.Map(geo_data=geo_data, scale=200)
+# 
+#     # update_props =
+#     # click_props =
+#     hover_props = vincent.PropertySet(fill=vincent.ValueRef(value='red'))
+#     vis.marks[0].properties.hover = hover_props
+# 
+#     vis.to_json("json/map.json")
+#     return "Map Generated"
 
 
 def get_local_ip():
