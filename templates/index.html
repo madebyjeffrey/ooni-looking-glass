@@ -53,7 +53,9 @@
       </div>
     </nav>
 
-    <div id="map"></div>
+    <div id="map">
+        <div class="follower"></div>
+    </div>
 
     <div class="container">
       <!-- Example row of columns -->
@@ -89,6 +91,29 @@
 
         <script type="text/javascript">
             // parse a spec and create a visualization view
+            var mouseX = 0, mouseY = 0, limitX = 15, limitY = 15;
+
+            // cache the selector
+            var follower = null; 
+            var xp = 0, yp = 0;
+            $('#map').mousemove(function(e) {
+                var $elem = $(this);
+                //if($elem.attr('id') == 'map') {
+                    var offset = $elem.offset();
+                    mouseX = Math.min(e.pageX - offset.left, $elem.width() - limitX);
+                    mouseY = Math.min(e.pageY - offset.top, $elem.height() - limitY);
+                    if (mouseX < 0) mouseX = 0;
+                    if (mouseY < 0) mouseY = 0;
+                    // change 12 to alter damping higher is slower
+                    xp += (mouseX - xp) / 12;
+                    yp += (mouseY - yp) / 12;
+                    var loop = setInterval(function() {
+                        $elem.find('.follower').css({left:xp, top:yp});
+                    }, 30);
+                //}
+            });
+
+
             function parse(spec) {
               vg.parse.spec(spec, function(chart) {
                 chart({el:"#map"}).update();
