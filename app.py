@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
 from flask import Flask, render_template
+import os
+import fcntl
 import socket
 import struct
 
