@@ -1,0 +1,52 @@
+from flask import Flask, render_template
+import socket
+import struct
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+def get_local_ip():
+    """
+    Enumerates through a list of common interface names to resolve internal IP.
+    Note that Python3 expects bytes objects for the struct.pack() call.
+    """
+    ip = socket.gethostbyname(socket.gethostname())
+    if ip.startswith("127.") and os.name != "nt":
+        interfaces = [
+            b'eth0',
+            b'eth1',
+            b'eth2',
+            b'wlan0',
+            b'wlan1',
+            b'wifi0',
+            b'ath0',
+            b'ath1',
+            b'ppp0',
+        ]
+        for ifname in interfaces:
+            try:
+                ip = get_interface_ip(ifname)
+                break
+            except IOError:
+                pass
+    return ip
+
+
+def get_interface_ip(ifname):
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    return socket.inet_ntoa(fcntl.ioctl(
+        s.fileno(),
+        0x8915,  # SIOCGIFADDR
+        struct.pack(b'256s', ifname[:15])
+    )[20:24])
+
+if __name__ == "__main__":
+    host = '0.0.0.0'
+    port = 5000
+
+    print("Other people can connect to me from: %s:%d" % (get_local_ip(), port))
+    app.run(host=host, port=port, debug=True)
