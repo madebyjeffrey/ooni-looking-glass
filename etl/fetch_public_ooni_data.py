@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from boto.s3.connection import S3Connection
 from pymongo import MongoClient
+from pprint import pprint
 import json
 import zlib
 import yaml
@@ -69,9 +70,14 @@ def get_bridge_reachability_reports(s3):
         # Parse YAML file into header/payload, and associated payload with header
         header = yml[0]
         report = header
-        report['results'] = json.dumps(yml[1:])
+        report['results'] = []
 
-        # Add report to a list to be inserted into MongoDB
+        for subreport in yml[1:]:
+            if subreport['record_type'] == 'entry':
+                print("subreport")
+                report['results'].append(subreport)
+            if subreport['record_type'] == 'footer':
+                report['footer'] = subreport
         reports.append(report)
     return reports
 
@@ -84,7 +90,7 @@ def insert_bridge_reachability_reports(db, reports):
     :return:
     """
     print("Inserting data into MongoDB")
-    db.ooni_public.insert_many(reports)
+    db.ooni_test.insert_many(reports)
 
 
 def main():
