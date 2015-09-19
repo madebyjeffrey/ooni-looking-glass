@@ -49,9 +49,9 @@ def main():
             'test_name': report['test_name'],
             'test_helpers': report['test_helpers'],
             'test_version': report['test_version'],
-            'options': report['options'],
-            'payload': fetch_yaml_report(s3=s3, bucket=bucket, filename=report['report_filename'], keys=keys)
+            'options': report['options']
         }
+        fetch_yaml_report(s3=s3, bucket=bucket, filename=report['report_filename'], keys=keys)
         pprint(r)
         break
     else:
@@ -67,10 +67,9 @@ def fetch_yaml_report(s3, bucket, filename, keys):
             gzipped_yaml = k.get_contents_as_string()
 
             # Decompress YAMLOO and convert to JSON
-            reports = []
-            for report in yaml.load_all(zlib.decompress(bytes(gzipped_yaml), 15+32)):
-                reports.append(report)
-            return json.dumps(reports)
+            reports = yaml.safe_load_all(zlib.decompress(bytes(gzipped_yaml), 15+32))
+            for report in reports:
+                print(report)
 
 
 if __name__ == "__main__":
