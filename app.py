@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import os
 import fcntl
 import socket
 import struct
 
+import vincent
+
 app = Flask(__name__)
+
+world_topo = r'world-countries.topo.json'
+
 
 @app.route("/")
 def index():
@@ -14,6 +19,28 @@ def index():
 @app.route("/static/<path:path>")
 def send_static_files(path):
     return send_from_directory('static', path)
+
+
+# Not sure where the request for this comes from, would like to condense this
+# in to the json catchall below if we can find it
+@app.route("/world-countries.topo.json")
+def world_topo_json():
+    return send_from_directory('json', world_topo)
+
+
+@app.route('/json/<path:path>')
+def send_json(path):
+    return send_from_directory('json', path)
+
+
+@app.route("/gen_map")
+def gen_map():
+    geo_data = [{'name': 'countries',
+                 'url': world_topo,
+                 'feature': 'world-countries'}]
+    vis = vincent.Map(geo_data=geo_data, scale=200)
+    vis.to_json("json/map.json")
+    return "Map Generated"
 
 
 def get_local_ip():
@@ -50,6 +77,7 @@ def get_interface_ip(ifname):
         0x8915,  # SIOCGIFADDR
         struct.pack(b'256s', ifname[:15])
     )[20:24])
+
 
 if __name__ == "__main__":
     host = '0.0.0.0'
