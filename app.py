@@ -7,6 +7,9 @@ import struct
 
 import vincent
 
+# For debugging
+from pprint import pprint
+
 app = Flask(__name__)
 
 world_topo = r'world-countries.topo.json'
@@ -34,7 +37,14 @@ def gen_map():
     geo_data = [{'name': 'countries',
                  'url': world_topo,
                  'feature': 'world-countries'}]
+
     vis = vincent.Map(geo_data=geo_data, scale=200)
+
+    # update_props =
+    # click_props =
+    hover_props = vincent.PropertySet(fill=vincent.ValueRef(value='red'))
+    vis.marks[0].properties.hover = hover_props
+
     vis.to_json("static/json/map.json")
     return "Map Generated"
 

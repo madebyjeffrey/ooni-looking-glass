@@ -38,6 +38,11 @@
             "value": "#000000"
           }
         },
+        "hover": {
+          "fill": {
+            "value": "red"
+          }
+        },
         "update": {
           "fill": {
             "value": "steelblue"

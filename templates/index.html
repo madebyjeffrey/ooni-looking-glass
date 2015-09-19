@@ -90,7 +90,9 @@
         <script type="text/javascript">
             // parse a spec and create a visualization view
             function parse(spec) {
-              vg.parse.spec(spec, function(chart) { chart({el:"#map"}).update(); });
+              vg.parse.spec(spec, function(chart) {
+                chart({el:"#map"}).update();
+              });
             }
             parse("static/json/map.json");
         </script>
