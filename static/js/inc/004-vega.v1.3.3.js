@@ -6696,8 +6696,7 @@ vg.ViewFactory = function(defs) {
         $('.follower').hide();
       })
       .on("click", function(evt, item) {
-        // Here we should redirect to country page
-        console.log(item.datum.data.id);
+        window.goToAnchor('cc-' + item.datum.data.id.toLowerCase());
       });
 
 
