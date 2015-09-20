@@ -44,10 +44,12 @@
 
     <section>
     <!-- Table of pluggable transports -->
+    <br>
     <div class="table-responsive">
         <table class="table table-bordered table-condensed">
             <tr>
-              <th><a name="table"></a>Country code</th>
+                <th></th>
+                <th>Country code</th>
                 {% for transport in transports|sort %}
                     <th>{{ transport }}</th>
                 {% endfor %}
@@ -56,7 +58,8 @@
             <!-- If there is data, we care about the metric -->
             {% for cc in metrics %}
                 <tr>
-                    <td>{{ cc }}</td>
+                    <td width="1" align="center"><img class="flag flag-{{ countries[cc]['alpha3'] }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/></td>
+                    <td>{{ countries[cc]['name'] }}</td>
                     {% for transport in metrics[cc].keys() %}
                         {% if metrics[cc][transport]['failureRate'] < 0.70  %}
                             <td bgcolor="green"></td>
@@ -71,8 +74,16 @@
 <div class="col-xs-12 text-center">
         <a class="btn btn-default" href="#about">More</a>
       </div>
-
-      </section>
+      <div class="col-md-4">
+        <h2>Open Data</h2>
+        <p>OONI provides data of its observations of network tampering taking place around the world, which can be useful to journalists, technologists, and legal scholars. </p>
+     </div>
+      <div class="col-md-4">
+        <h2>Contribute</h2>
+        <p>The design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference.</p>
+      </div>
+    </div>
+    </section>
 
     <section>
     <div class="row">
@@ -92,7 +103,16 @@
     </div>
     </section>
 
-
+    <section>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            <a name="cc-usa"></a>
+            USA</h2>
+          This is the anchor.
+        </div>
+      </div>
+    </section>
 {% endblock %}
 
 {% block scripts %}
