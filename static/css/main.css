@@ -38,3 +38,27 @@ img {
   color: #ffffff;
   padding: .2em 1em;
 }
+
+.table.table-bordered.table-condensed {
+  table-layout: fixed;
+}
+
+.status {
+  width: 3rem;
+}
+
+.country-name {
+  width: 3rem;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.country-flag {
+  width: 1rem;
+}
+
+tr th {
+  text-align: center;
+}
