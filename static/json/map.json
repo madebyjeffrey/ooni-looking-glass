@@ -35,17 +35,17 @@
             "field": "path"
           },
           "stroke": {
-            "value": "#000000"
+            "value": "#ffffff"
           }
         },
         "hover": {
           "fill": {
-            "value": "#000000"
+            "value": "#8dd8f8"
           }
         },
         "update": {
           "fill": {
-            "value": "steelblue"
+            "value": "#0588cb"
           }
         }
       },

@@ -51,12 +51,12 @@ def gen_map():
     geo_from = vincent.MarkRef(data='countries', transform=[geo_transform])
 
     enter_props = vincent.PropertySet(
-        stroke=vincent.ValueRef(value='#000000'),
+        stroke=vincent.ValueRef(value='#ffffff'),
         path=vincent.ValueRef(field='path')
     )
 
-    update_props = vincent.PropertySet(fill=vincent.ValueRef(value='steelblue'))
-    hover_props = vincent.PropertySet(fill=vincent.ValueRef(value='#000000'))
+    update_props = vincent.PropertySet(fill=vincent.ValueRef(value='#0588cb'))
+    hover_props = vincent.PropertySet(fill=vincent.ValueRef(value='#8dd8f8'))
     mark_props = vincent.MarkProperties(
         enter=enter_props,
         update=update_props,
