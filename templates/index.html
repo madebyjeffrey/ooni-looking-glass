@@ -33,7 +33,7 @@
   <section>
     <div class="row">
       <div class="col-xs-12 text-center">
-       
+
         <h2> <a name="map">&nbsp;</a>
           Bridge Reachability on Pluggable Transports</h2>
       </div>
@@ -96,13 +96,13 @@
           About</h2>
       </div>
       <div class="col-xs-12">
-      <p>The <a href="https://ooni.torproject.org/">Open Observatory of Network Interference (OONI)</a> is a project led by the Tor Project, which aims to aggregate, and make available open data, and observations associated with various types, methods, and amounts of network tampering taking place in the world.</p>
-      <p>Journalists, technologists, and legal scholars can use these observations to help paint a picture of where in the world incidences of network tampering are taking place, and by which actors such forms of interference can be attributed to.</p>
-      <p>At a high-level, the goal of OONI is to detect the presence of network devices which perform seemingly passive network traffic discrimination, or interference, as well as to help researchers understand what types of content are being targeted for discrimination by a given actor.</p>
-      <p>The architectural design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference. After being subject to peer review, these tests can then be executed against a set of experiment, and control networks, which will allow for the detection of network anomalies using an experiment-control methodology.</p>
-      <p>While a mismatch between the experiment, and control data is not always indicative of network manipulation, in many protocols this is often a clear indication that some form of tampering has taken place.</p>
+      <p>The <a href="https://ooni.torproject.org/">Open Observatory of Network Interference (OONI)</a> is a global observation network led by the Tor Project. They make observations targeting network tempering and publish the results available openly. </p>
+      <p>Journalists, technologists, and legal scholars can use these observations to help illustrate where instances of network tampering take place, indicating which parties may be responsible.</p>
+      <p>The goal of OONI is to detect the presence of network devices which interfere with network traffic and help expand understanding  which types of content are being targeted for discrimination.</p>
+      <p>The architectural design of OONI allows third parties to contribute to the project by expanding tests centred around the detection of network traffic interference. After being subject to peer review, the tests can be executed against a set of experiment and control networks. These tests permit the detection of network anomalies using an experiment-control methodology.</p>
+      <p>A mismatch between the experiment and control data is not always indicative of network manipulation, in many protocols this is a clear indication that some form of tampering has taken place.</p>
       <p><code>ooni-probe</code> attempts to detect the presence of network traffic manipulation from the perspective of a given edge network probe using a blend of <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/"><strong>traffic manipulation</strong></a> and <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking"><strong>content blocking</strong></a> tests.</p>
-      <p>The goal of the <strong>traffic manipulation</strong> tests are to detect the presence of a network device which performs traffic manipulation to modify how a given user sees a particular network resource. Tests in this category may look for evidence of <a href="https://github.com/TheTorProject/ooni-probe/tree/master/ooni/nettests/manipulation">DNS spoofing</a>, <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/http_header_field_manipulation.py">HTTP header manipulation</a>, <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/captiveportal.py">captive portals</a>, or <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/traceroute.py">route tampering</a>.</p>
+      <p>The goal of the <strong>traffic manipulation</strong> tests are to detect the presence of a network device which performs traffic manipulation to modify how a given user sees a particular network resource. Tests in this category may look for evidence of <a href="https://github.com/TheTorProject/ooni-probe/tree/master/ooni/nettests/manipulation">DNS spoofing</a>, <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/http_header_field_manipulation.py">HTTP header manipulation</a>, <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/captiveportal.py">captive portals</a>, and <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/traceroute.py">route tampering</a>.</p>
       <p><strong>Content blocking</strong> tests aim to access content which may be blocked by a given actor. Examples of tests in this category include <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/dns_consistency.py">DNS consistency testing</a>, <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/bridge_reachability.py">Tor bridge reachability testing</a>, and tests which attempt to connect to <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/tcp_connect.py">one, or more censored resources</a>.</p>
       </div>
     </div>
