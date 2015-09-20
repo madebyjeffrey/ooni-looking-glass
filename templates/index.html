@@ -47,6 +47,11 @@
     <br>
     <div class="table-responsive">
         <table class="table table-bordered table-condensed">
+          <colgroup>
+            <col class="country-flag">
+            <col class="country-name">
+            <col class="status" span="{{transports|length}}">
+          </colgroup>
             <tr>
                 <th></th>
                 <th>Country code</th>
@@ -121,7 +126,7 @@
           var mouseX = 0, mouseY = 0, limitX = 15, limitY = 15;
 
           // cache the selector
-          var follower = null; 
+          var follower = null;
           var xp = 0, yp = 0;
           $('#map').mousemove(function(e) {
               var $elem = $(this);
