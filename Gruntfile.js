@@ -15,7 +15,8 @@ module.exports = function(grunt) {
     concat: {
       inc: {
         src: ['static/js/inc/*.js'],
-        dest: 'static/js/generated/libs.min.js'
+        dest: 'static/js/generated/libs.js',
+        sourceMap: true
       }
     }
   });
