@@ -3,7 +3,7 @@
 {% block content %}
     <div class="row">
       <div class="col-xs-12" id="map">
-        <div class="follower"></div>
+        <div class="follower"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" > <span> </span></div>
       </div>
     </div>
 
@@ -35,17 +35,13 @@
           var xp = 0, yp = 0;
           $('#map').mousemove(function(e) {
               var $elem = $(this);
-              //if($elem.attr('id') == 'map') {
                   var offset = $elem.offset();
                   mouseX = Math.min(e.pageX - offset.left, $elem.width() - limitX);
                   mouseY = Math.min(e.pageY - offset.top, $elem.height() - limitY);
                   if (mouseX < 0) mouseX = 0;
-                  if (mouseY < 0) mouseY = 0;
-                  // change 12 to alter damping higher is slower
-                  xp += (mouseX - xp) / 12;
-                  yp += (mouseY - yp) / 12;
+                  if (mouseY < 0) mouseY = 0; else mouseY = mouseY + 20;
                   var loop = setInterval(function() {
-                      $elem.find('.follower').css({left:xp, top:yp});
+                      $elem.find('.follower').css({left:mouseX, top:mouseY});
                   }, 30);
               //}
           });
@@ -57,5 +53,6 @@
             });
           }
           parse("static/json/map.json");
+          $(function(){$(".follower").hide()});
       </script>
 {% endblock %}
