@@ -2,9 +2,9 @@ from pymongo import MongoClient
 from collections import defaultdict
 from bson.code import Code
 from pprint import pprint
+import pandas as pd
 
 collection = 'ooni_public'
-
 
 def autodict():
     l = lambda: defaultdict(l)
@@ -30,6 +30,17 @@ def get_country_codes(db):
     return db.ooni_public.distinct('probe_cc')
 
 
+def get_pluggable_transport_metrics_per_country_as_table(db):
+    metrics = get_pluggable_transport_metrics_per_country(db=db)
+    user_ids = []
+    frames = []
+    for user_id, d in metrics.items():
+        user_ids.append(user_id)
+        frames.append(pd.DataFrame.from_dict(d, orient='index'))
+    df = pd.concat(frames, keys=user_ids)
+    return df
+
+
 def get_pluggable_transport_metrics_per_country(db):
     pipeline = [
         {'$unwind': '$results'},
@@ -47,7 +58,6 @@ def get_pluggable_transport_metrics_per_country(db):
         d = d['results']
         if len(d) != 3:
             continue
-
         if d['success']:
             rs[d['probe_cc']][d['transport_name']]['successfulBridgeConnections'] += 1
         else:
@@ -64,7 +74,6 @@ def get_number_of_metrics_per_country(db):
             'results.success': 1
         }}
     ]
-
     rs = defaultdict(lambda: defaultdict(int))
     for d in db.ooni_public.aggregate(pipeline):
         if d['results']['success']:
@@ -88,5 +97,5 @@ def get_mongodb_connection(host, port):
 
 if __name__ == "__main__":
     db = get_mongodb_connection(host='buildstuffwith.me', port=27017)
-    metrics = get_pluggable_transport_metrics_per_country(db=db)
+    metrics = get_pluggable_transport_metrics_per_country_as_table(db=db)
     pprint(metrics)
