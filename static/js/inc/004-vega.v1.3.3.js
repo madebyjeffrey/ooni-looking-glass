@@ -6703,7 +6703,7 @@ vg.ViewFactory = function(defs) {
         $('.follower').hide();
       })
       .on("click", function(evt, item) {
-        window.goToAnchor('cc-' + item.datum.data.id.toLowerCase());
+        window.goToAnchor('table');
       });
 
 
