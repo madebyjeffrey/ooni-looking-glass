@@ -1,30 +1,50 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <section>
+<section>
+  <div style="position:relative; top: 50%; transform: translateY(-50%);">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 text-center">
         <br>
-        <img src="/static/img/ooni-looking-glass-logo.png">
-        <h1>OONI Looking Glass </h1>
+        <a href="#map" >
+          <img src="/static/img/ooni-looking-glass-logo.png">
+        </a>
+        <h1>Open Observatory of Network Interference <br> Looking Glass </h1>
         <br>
-        <a href="#map" class="btn btn-default">See the Map</a>
+        <a href="#map" class="btn btn-default">Learn More</a>
       </div>
-    </section>
-    <section>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>OONI</h2>
+          <p><a href="https://ooni.torproject.org/">Open Observatory of Network Interference</a> scans a few major protocols for interference through the <a href="https://torproject.org/">tor</a> network and compares it to a known good value.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Open Data</h2>
+          <p>OONI provides data of its observations of network tampering taking place around the world, which can be useful to journalists, technologists, and legal scholars. </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Contribute</h2>
+          <p>The design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
     <div class="row">
       <div class="col-xs-12 text-center" id="map">
         <a name="map"></a>
         <div class="follower"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" > <span> </span></div>
       </div>
     </div>
+  </section>
 
+    <section>
     <!-- Table of pluggable transports -->
-    <br>
     <div class="table-responsive">
         <table class="table table-bordered table-condensed">
             <tr>
-                <th>Country code</th>
+              <th><a name="table"></a>Country code</th>
                 {% for transport in transports|sort %}
                     <th>{{ transport }}</th>
                 {% endfor %}
@@ -46,21 +66,7 @@
         </table>
     </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <h2>OONI</h2>
-        <p><a href="https://ooni.torproject.org/">Open Observatory of Network Interference</a> scans a few major protocols for interference through the <a href="https://torproject.org/">tor</a> network and compares it to a known good value.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Open Data</h2>
-        <p>OONI provides data of its observations of network tampering taking place around the world, which can be useful to journalists, technologists, and legal scholars. </p>
-     </div>
-      <div class="col-md-4">
-        <h2>Contribute</h2>
-        <p>The design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference.</p>
-      </div>
-    </div>
-    </section>
+      </section>
 
     <section>
     <div class="row">
@@ -80,16 +86,7 @@
     </div>
     </section>
 
-    <section>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>
-            <a name="cc-usa"></a>
-            USA</h2>
-          This is the anchor.
-        </div>
-      </div>
-    </section>
+
 {% endblock %}
 
 {% block scripts %}

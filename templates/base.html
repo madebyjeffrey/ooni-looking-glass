@@ -33,6 +33,8 @@
 </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+        <li ><a href="#map">The Map</a></li>
+        <li ><a href="#table">The Table</a></li>
         <li ><a href="#about">About</a></li>
 </ul>
         </div>
@@ -69,8 +71,8 @@
         });
       });
       $('section').each(function(){
-        if ($(this).height() < $(document).height()) {
-          $(this).css("height", $(document).height());}
+        if ($(this).height() < $(window).height()) {
+          $(this).css("height", $(window).height());}
       });
     </script>
       {% block scripts %}
