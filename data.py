@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+from collections import defaultdict
 from bson.code import Code
 from pprint import pprint
 
@@ -14,13 +15,22 @@ def get_distinct_asns(db):
     return db[collection].distinct('probe_asn')
 
 
-def get_country_names(db):
+def get_number_of_metrics_per_country(db):
     pipeline = [
         {'$unwind': '$results'},
-        {'$group': {"_id": "$probe_cc", "probe_cc": {"$sum": 1}}},
-        {'$sort': {'count': -1}},
+        {'$project': {
+            '_id':0,
+            'results.probe_cc': 1,
+            'results.success': 1
+        }}
     ]
-    return list(db.ooni_public.aggregate(pipeline))
+    rs = defaultdict(lambda: defaultdict(int))
+    for d in db.ooni_public.aggregate(pipeline):
+        if d['results']['success']:
+            rs[d['results']['probe_cc']]['successfulBridgeConnections'] += 1
+        else:
+            rs[d['results']['probe_cc']]['failedBridgeConnections'] += 1
+    return rs
 
 
 def get_mongodb_connection(host, port):
@@ -33,8 +43,3 @@ def get_mongodb_connection(host, port):
     print("Initiating MongoDB connection to %s:%d" % (host, port))
     client = MongoClient(host, port)
     return client.ooni
-
-
-if __name__ == "__main__":
-    db = get_mongodb_connection(host='buildstuffwith.me', port=27017)
-    pprint(get_country_names(db))
