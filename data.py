@@ -20,7 +20,7 @@ def get_link_to_censorship_report(cc):
     response = requests.head(url)
     if response.status_code == 200:
         return url
-    else
+    else:
         return "#"
 
 def defaultdict_to_dict(d):
