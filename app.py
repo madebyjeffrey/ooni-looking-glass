@@ -4,8 +4,9 @@ import os
 import socket
 import struct
 import data
-
 import vincent
+import pycountry
+import requests
 
 # For debugging
 from pprint import pprint
@@ -18,7 +19,15 @@ world_topo = r'world-countries.topo.json'
 @app.route("/")
 def index():
     db = data.get_mongodb_connection(host='buildstuffwith.me', port=27017)
-    return render_template("index.html", transports=data.get_pluggable_transports(db), metrics=data.get_pluggable_transport_metrics_per_country_as_table(db))
+    metrics = data.get_pluggable_transport_metrics_per_country_as_table(db)
+    countries = {}
+    censorship_report_links = {}
+    for cc in metrics:
+        censorship_report_links[cc] = data.get_link_to_censorship_report(cc)
+        countries[cc] = {}
+        countries[cc]['name'] = pycountry.countries.get(alpha2=cc).name
+        countries[cc]['alpha3'] = pycountry.countries.get(alpha2=cc).alpha3.lower()
+    return render_template("index.html", transports=data.get_pluggable_transports(db), metrics=metrics, countries=countries, censorship_report_links=censorship_report_links)
 
 @app.route("/about")
 def about():

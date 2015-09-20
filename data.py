@@ -4,6 +4,8 @@ from bson.code import Code
 from pprint import pprint
 import numpy as np
 import pandas as pd
+import pycountry
+import requests
 
 collection = 'ooni_public'
 
@@ -12,6 +14,14 @@ def autodict():
     l = lambda: defaultdict(l)
     return l()
 
+def get_link_to_censorship_report(cc):
+    country_name = pycountry.countries.get(alpha2=cc).name.lower()
+    url = 'https://opennet.net/countries/%s' % country_name
+    response = requests.head(url)
+    if response.status_code == 200:
+        return url
+    else
+        return "#"
 
 def defaultdict_to_dict(d):
     if isinstance(d, defaultdict):
@@ -38,7 +48,7 @@ def get_pluggable_transports(db):
 def get_pluggable_transport_metrics_per_country_as_table(db):
     metrics = pd.DataFrame(get_pluggable_transport_metrics_per_country(db))
     for cc in metrics:
-       for transport in metrics[cc].keys():
+        for transport in metrics[cc].keys():
            successful = metrics[cc][transport]['successfulBridgeConnections']
            failures = metrics[cc][transport]['failedBridgeConnections']
            try:
