@@ -6,6 +6,7 @@ import pandas as pd
 
 collection = 'ooni_public'
 
+
 def autodict():
     l = lambda: defaultdict(l)
     return l()
@@ -30,6 +31,10 @@ def get_country_codes(db):
     return db.ooni_public.distinct('probe_cc')
 
 
+def get_pluggable_transports(db):
+    return db.ooni_public.distinct('results.transport_name')
+
+
 def get_pluggable_transport_metrics_per_country_as_table(db):
     metrics = get_pluggable_transport_metrics_per_country(db=db)
     user_ids = []
@@ -38,6 +43,9 @@ def get_pluggable_transport_metrics_per_country_as_table(db):
         user_ids.append(user_id)
         frames.append(pd.DataFrame.from_dict(d, orient='index'))
     df = pd.concat(frames, keys=user_ids)
+    df = df.fillna(0)
+    # Add a percentage of failed bridge connections per country per transport
+    df['bridgeConnectionFailureRate'] = (df['failedBridgeConnections']/(df['failedBridgeConnections'] + df['successfulBridgeConnections'])) * 100
     return df
 
 
@@ -51,9 +59,14 @@ def get_pluggable_transport_metrics_per_country(db):
             'results.transport_name': 1,
         }}
     ]
+    # Pre-populate the return table to prevent empty values for countries/pluggable transports
     rs = {}
     for cc in get_country_codes(db=db):
         rs[cc] = defaultdict(lambda: defaultdict(int))
+        for transport in get_pluggable_transports(db=db):
+            rs[cc][transport]['successfulBridgeConnections'] = 0
+            rs[cc][transport]['failedBridgeConnections'] = 0
+
     for d in db.ooni_public.aggregate(pipeline):
         d = d['results']
         if len(d) != 3:
