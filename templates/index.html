@@ -2,7 +2,6 @@
 
 {% block content %}
 <section>
-  <div style="position:relative; top: 50%; transform: translateY(-50%);">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 text-center">
         <br>
@@ -13,6 +12,7 @@
         <br>
         <a href="#map" class="btn btn-default">Learn More</a>
       </div>
+    </div>
       <div class="row">
         <div class="col-md-4">
           <h2>OONI</h2>
@@ -28,15 +28,18 @@
         </div>
       </div>
 
-    </div>
   </section>
+
   <section>
+    <a name="map">&nbsp;</a>    
     <div class="row">
       <div class="col-xs-12 text-center">
        
-        <h2> <a name="map">&nbsp;</a>
+        <h2> 
           Bridge Reachability on Pluggable Transports</h2>
       </div>
+    </div>
+    <div class="row">
       <div class="col-xs-12 text-center" id="map">
         <div class="follower"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" > <span> </span></div>
       </div>
@@ -47,7 +50,12 @@
   </section>
 
     <section>
-    <!-- Table of pluggable transports -->
+<a name="table"></a>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>Pluggable Transports Failing Most Often By Country</h2>
+      </div>
+    </div>
     <div class="row">
       <div class="col-xs-12 text-center">
     <div class="table-responsive">
@@ -59,7 +67,7 @@
           </colgroup>
             <tr>
                 <th></th>
-                <th><a name="table"></a>Country</th>
+                <th>Country</th>
                 {% for transport in transports|sort %}
                     <th>{{ transport }}</th>
                 {% endfor %}
