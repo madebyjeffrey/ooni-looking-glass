@@ -3,6 +3,7 @@ from flask import Flask, render_template, send_from_directory
 import os
 import socket
 import struct
+import data
 
 import vincent
 
@@ -16,7 +17,8 @@ world_topo = r'world-countries.topo.json'
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    db = data.get_mongodb_connection(host='buildstuffwith.me', port=27017)
+    return render_template("index.html", transports=data.get_pluggable_transports(db), metrics=data.get_pluggable_transport_metrics_per_country_as_table(db))
 
 @app.route("/about")
 def about():

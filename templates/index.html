@@ -19,6 +19,33 @@
       </div>
     </div>
 
+    <!-- Table of pluggable transports -->
+    <br>
+    <div class="table-responsive">
+        <table class="table table-bordered table-condensed">
+            <tr>
+                <th>Country code</th>
+                {% for transport in transports|sort %}
+                    <th>{{ transport }}</th>
+                {% endfor %}
+            </tr>
+
+            <!-- If there is data, we care about the metric -->
+            {% for cc in metrics %}
+                <tr>
+                    <td>{{ cc }}</td>
+                    {% for transport in metrics[cc].keys() %}
+                        {% if metrics[cc][transport]['failureRate'] < 0.70  %}
+                            <td bgcolor="green"></td>
+                        {% else %}
+                            <td bgcolor="red"></td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
     <div class="row">
       <div class="col-md-4">
         <h2>OONI</h2>

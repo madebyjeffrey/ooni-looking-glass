@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from collections import defaultdict
 from bson.code import Code
 from pprint import pprint
+import numpy as np
 import pandas as pd
 
 collection = 'ooni_public'
@@ -34,19 +35,17 @@ def get_country_codes(db):
 def get_pluggable_transports(db):
     return db.ooni_public.distinct('results.transport_name')
 
-
 def get_pluggable_transport_metrics_per_country_as_table(db):
-    metrics = get_pluggable_transport_metrics_per_country(db=db)
-    user_ids = []
-    frames = []
-    for user_id, d in metrics.items():
-        user_ids.append(user_id)
-        frames.append(pd.DataFrame.from_dict(d, orient='index'))
-    df = pd.concat(frames, keys=user_ids)
-    df = df.fillna(0)
-    # Add a percentage of failed bridge connections per country per transport
-    df['bridgeConnectionFailureRate'] = (df['failedBridgeConnections']/(df['failedBridgeConnections'] + df['successfulBridgeConnections'])) * 100
-    return df
+    metrics = pd.DataFrame(get_pluggable_transport_metrics_per_country(db))
+    for cc in metrics:
+       for transport in metrics[cc].keys():
+           successful = metrics[cc][transport]['successfulBridgeConnections']
+           failures = metrics[cc][transport]['failedBridgeConnections']
+           try:
+                metrics[cc][transport]['failureRate'] = (failures / (successful + failures)) * 100
+           except ZeroDivisionError:
+                metrics[cc][transport]['failureRate'] = 0
+    return metrics
 
 
 def get_pluggable_transport_metrics_per_country(db):
@@ -66,7 +65,6 @@ def get_pluggable_transport_metrics_per_country(db):
         for transport in get_pluggable_transports(db=db):
             rs[cc][transport]['successfulBridgeConnections'] = 0
             rs[cc][transport]['failedBridgeConnections'] = 0
-
     for d in db.ooni_public.aggregate(pipeline):
         d = d['results']
         if len(d) != 3:
@@ -75,7 +73,7 @@ def get_pluggable_transport_metrics_per_country(db):
             rs[d['probe_cc']][d['transport_name']]['successfulBridgeConnections'] += 1
         else:
             rs[d['probe_cc']][d['transport_name']]['failedBridgeConnections'] += 1
-    return defaultdict_to_dict(rs)
+    return rs
 
 
 def get_number_of_metrics_per_country(db):

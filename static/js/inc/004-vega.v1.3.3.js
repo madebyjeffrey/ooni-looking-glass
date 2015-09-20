@@ -1359,6 +1359,13 @@ var vg_gradient_id = 0;vg.canvas = {};vg.canvas.path = (function() {
   function drawPathOne(path, g, o, items) {
     var fill = o.fill, stroke = o.stroke, opac, lc, lw;
 
+    var f = o.datum.data.id;
+    var ooniCountries = ['NLD', 'USA', 'CHN', 'UKR', 'DEU', 'GRC',
+                         'RUS', 'IRN', 'ITA', 'CAN', 'BEL'];
+    if (ooniCountries.indexOf(f) == -1) {
+        fill = 'grey';
+    }
+
     path(g, items);
 
     opac = o.opacity == null ? 1 : o.opacity;
