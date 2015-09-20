@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     cssmin: {
       incapp: {
         files: [{
-          src: ['static/css/inc/bootstrap.min.css','static/css/inc/bootstrap-theme.min.css', 'static/css/flags.css', 'static/css/main.css'],
+          src: ['static/css/inc/bootstrap.min.css', 'static/css/flags.css', 'static/css/main.css'],
           dest: 'static/css/generated/incapp.min.css',
         }],
       },
