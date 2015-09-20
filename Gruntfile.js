@@ -3,14 +3,23 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    cssmin: {
+      incapp: {
+        files: [{
+          src: ['static/css/inc/bootstrap.min.css','static/css/inc/bootstrap-theme.min.css', 'static/css/flags.css', 'static/css/main.css'],
+          dest: 'static/css/generated/incapp.min.css',
+        }],
+      },
+    },
+
     concat: {
-      dist: {
-        src: ['static/js/concat/*.js'],
-        dest: 'static/js/concatlibs.min.js'
+      inc: {
+        src: ['static/js/inc/*.js'],
+        dest: 'static/js/generated/libs.min.js'
       }
     }
   });
-  grunt.registerTask('default', ['concat:dist']);
+  grunt.registerTask('default', ['concat:inc','cssmin:incapp']);
 
 
 };
