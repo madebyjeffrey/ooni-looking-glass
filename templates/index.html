@@ -32,8 +32,12 @@
   </section>
   <section>
     <div class="row">
-      <div class="col-xs-12 text-center" id="map">
+      <div class="col-xs-12 text-center">
+        <h2>
         <a name="map"></a>
+          Bridge Reachability on Pluggable Transports</h2>
+      </div>
+      <div class="col-xs-12 text-center" id="map">
         <div class="follower"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" > <span> </span></div>
       </div>
       <div class="col-xs-12 text-center">
@@ -44,12 +48,13 @@
 
     <section>
     <!-- Table of pluggable transports -->
-    <br>
+    <div class="row">
+      <div class="col-xs-12 text-center">
     <div class="table-responsive">
         <table class="table table-bordered table-condensed">
             <tr>
                 <th></th>
-                <th>Country code</th>
+                <th><a name="table"></a>Country</th>
                 {% for transport in transports|sort %}
                     <th>{{ transport }}</th>
                 {% endfor %}
@@ -71,18 +76,11 @@
             {% endfor %}
         </table>
     </div>
-<div class="col-xs-12 text-center">
+      <div class="col-xs-12 text-center">
         <a class="btn btn-default" href="#about">More</a>
       </div>
-      <div class="col-md-4">
-        <h2>Open Data</h2>
-        <p>OONI provides data of its observations of network tampering taking place around the world, which can be useful to journalists, technologists, and legal scholars. </p>
-     </div>
-      <div class="col-md-4">
-        <h2>Contribute</h2>
-        <p>The design of OONI allows for researchers, and developers to contribute to the project by designing, or implementing tests centered around the detection of network traffic discrimination, and interference.</p>
-      </div>
     </div>
+  </div>
     </section>
 
     <section>
@@ -101,17 +99,6 @@
       <p><strong>Content blocking</strong> tests aim to access content which may be blocked by a given actor. Examples of tests in this category include <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/dns_consistency.py">DNS consistency testing</a>, <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/bridge_reachability.py">Tor bridge reachability testing</a>, and tests which attempt to connect to <a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/tcp_connect.py">one, or more censored resources</a>.</p>
       </div>
     </div>
-    </section>
-
-    <section>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>
-            <a name="cc-usa"></a>
-            USA</h2>
-          This is the anchor.
-        </div>
-      </div>
     </section>
 {% endblock %}
 
